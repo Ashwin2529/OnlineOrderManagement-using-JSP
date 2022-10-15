@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>
+<constant name="struts.devMode" value="true" />
+<package name="default" extends="struts-default">
+  
+<action name="adminLogin" class="com.onlineordermanagement.action.AdminLogin">  
+<result name="success">admin.jsp</result>
+<result name="error">login.jsp</result>
+</action>
+<action name="custLogin" class="com.onlineordermanagement.action.CustLogin">  
+<result name="success">customer.jsp</result>
+<result name="error">login.jsp</result>
+</action>
+<action name="adminLogout" class="com.onlineordermanagement.action.AdminLogin" method="logout">  
+<result name="success">login.jsp</result>
+</action>
+<action name="custLogout" class="com.onlineordermanagement.action.CustLogin" method="logout">  
+<result name="success">login.jsp</result>
+</action>
+</package>
+
+
+<package name="default1" extends="json-default">
+<action name="viewCust" class="com.onlineordermanagement.action.ViewCustDetails">  
+<result name="CustomerDetails" type="json"></result>
+</action>
+
+<action name="viewItm" class="com.onlineordermanagement.action.ViewItmDetails">  
+<result name="ItemDetails" type="json"></result>
+</action>
+
+<action name="viewCpn" class="com.onlineordermanagement.action.ViewCouponDetails">  
+<result name="CouponDetails" type="json"></result>
+</action>
+
+<action name="addCust" class="com.onlineordermanagement.action.AddNewUser">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="addItm" class="com.onlineordermanagement.action.AddNewItem">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="addCpn" class="com.onlineordermanagement.action.AddNewCoupon">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="updtCust" class="com.onlineordermanagement.action.UpdateUser">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="updtItm" class="com.onlineordermanagement.action.UpdateItem">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="dltItm" class="com.onlineordermanagement.action.DeleteItem">  
+<result name="success" type="json"></result>
+</action>
+
+<action name="dltUsr" class="com.onlineordermanagement.action.DeleteUser">  
+<result name="success" type="json"></result>
+</action>
+
+
+
+<action name="addCrt" class="com.onlineordermanagement.action.AddToCart">  
+<result name="success" type="json"></result>
+</action>
+<action name="viewCart" class="com.onlineordermanagement.action.ViewCart">  
+<result name="CartDetails" type="json"></result>
+</action>
+<action name="billordr" class="com.onlineordermanagement.action.BillOrder">  
+<result name="success" type="json"></result>
+</action>
+<action name="viewOrders" class="com.onlineordermanagement.action.ViewOrderHistory">  
+<result name="success" type="json"></result>
+</action>
+<action name="topSelling" class="com.onlineordermanagement.action.ViewTopSelling">  
+<result name="success" type="json"></result>
+</action>
+</package>
+</struts>

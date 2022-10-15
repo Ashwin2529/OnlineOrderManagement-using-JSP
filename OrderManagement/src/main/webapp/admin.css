@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin:20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+button {
+	width: 180px;
+    background: red;
+    border: 0px;
+    margin: 14px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui;
+    box-shadow: 0px 5px 15px 0px grey;
+	transition:0.5s;
+}
+
+button:hover {
+	background: white;
+	color: red;
+	box-shadow: 0px 10px 20px 10px grey;
+	transition:0.5s;
+}
+input{
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-family: system-ui;
+    font-weight: 600;
+}
+body{
+	font-family: system-ui;
+	margin: 0px;
+}
+input[type=submit ]{
+	width: 180px;
+    background: red;
+    border: 0px;
+    margin: 14px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui;
+    box-shadow: 0px 5px 15px 0px grey;
+	transition:0.5s;
+}
+input[type=submit ]:hover {
+	background: white;
+	color: red;
+	box-shadow: 0px 10px 20px 10px grey;
+	transition:0.5s;
+}
+div{
+	display:grid;
+}
+form{
+	display:grid;
+}
+.Login{
+	width: 400px;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+	border-radius: 10px;
+	margin: auto;
+	text-align:center;
+	margin-top: 60px;
+}
+select{
+    height: 45px;
+    width: 310px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-family: system-ui;
+    color: black;
+    font-weight: 600;
+}
+a{
+	text-decoration:none;
+	color: white;
+	font-size:20px;
+}
+li{
+    margin: 10px;
+}
+.wlcmMsg{
+    margin: 20px;
+}
+.Nav{
+    background-color: rgb(255, 54, 54);
+    height: 70px;
+    display:inline-flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+.loginType{
+	display:inline-flex;
+	margin-left: 800px;
+}
+.adminFun{
+    text-decoration: none;
+    margin-left: 100px;
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.butLogout{
+	margin-left:200px;
+	background-color:transparent;
+	border: solid white 2px;
+}
+.butLogout a{
+	color: white;
+}
+.butLogout a:hover{
+	color: red;
+}
